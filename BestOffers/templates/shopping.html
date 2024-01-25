@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+  <title>Shopping</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+<style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+  .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+  .fa-anchor,.fa-coffee {font-size:200px}
+  .myLink {display: none}
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+  <div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="http://127.0.0.1:8000" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+    <a href="http://127.0.0.1:8000/realestate/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Real Estates</a>
+    <a href="http://127.0.0.1:8000/travel/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Travel</a>
+    <a href="http://127.0.0.1:8000/vehicles/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Vehicles</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Shopping</a>
+    <button class="btn btn-success" data-bs-toggle="modal"
+      data-bs-target="#modal6" id="registerButton" style="float: right;"> Register </button>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="http://127.0.0.1:8000/realestate/" class="w3-bar-item w3-button w3-padding-large">Real Estates</a>
+    <a href="http://127.0.0.1:8000/travel/" class="w3-bar-item w3-button w3-padding-large">Travel</a>
+    <a href="http://127.0.0.1:8000/vehicles/" class="w3-bar-item w3-button w3-padding-large">Vehicles</a>
+    <a href="http://127.0.0.1:8000" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <button class="btn btn-success" data-bs-toggle="modal"
+      data-bs-target="#modal6" id="registerButton2" style="float: right;"> Register </button>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Find the Best Offers. We search for you in all Pages</h1>
+  <p class="w3-xlarge">We are looking in over 1.000 Homepages to find the best Offers for you and provide them in one Page</p>
+</header>
+
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Lorem Ipsum</h1>
+      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+
+      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Lorem Ipsum</h1>
+      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+
+      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal#6 -->
+    <div class="modal fade .modal-dialog-centered modal-dialog-scrollable"
+      id="modal6" data-bs-backdrop="static" data-bs-keyboard="false"
+      tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <label for="exampleFormControlTextarea1" class="form-label
+              container" style="font-family:times new roman; font-size:
+                22px; border-radius: 1cm; border-color:cyan; border: 14px inset
+                #1C6EA4; background-color:yellow; text-align:center;">   Get notified via EMAIL & WhatsApp   </label>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="modal-body6">
+
+            {% csrf_token %}
+            <form action="/subscribe/" method="post">
+              {% csrf_token %}
+              <div class="mb-3" style=" margin: auto;">
+
+
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"> NAME
+                  </label>
+                  <input type="text" class="form-control" id="username"
+                    name="name">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">WhatsApp
+                    Number</label>
+                  <input type="text" class="form-control" id="password"
+                    name="number">
+                </div>
+
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Email</label>
+                  <div class="input-group has-validation mb-3">
+
+                    <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                    <input type="email" class="form-control"
+                      id="exampleFormControlInput12" name="email"
+                      placeholder="name@example.com">
+
+                  </div>
+                </div>
+
+
+                <br>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                  <button type="submit" value="Submit" class="btn
+                    btn-outline-success">Subscribe</button>
+                </div>
+              </div>
+            </form>
+
+
+          </div>
+          <div class="modal-footer" id="modal-footer6">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
+
